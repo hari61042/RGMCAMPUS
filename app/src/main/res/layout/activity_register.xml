@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient">
+    <EditText
+        android:id="@+id/Ret1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Name"
+        android:textSize="30dp"
+        android:background="#ffffff"
+        android:textColor="#1e1d1d"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25sp"
+        />
+
+    <EditText
+        android:id="@+id/Ret2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="30dp"
+        android:background="#ffffff"
+        android:textColor="#1e1d1d"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Mobile"
+        android:inputType="phone"
+        />
+    <Spinner
+        android:id="@+id/sp"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#FFFFFF"
+        android:autofillHints="Gender"
+        android:entries="@array/gender"
+        >
+
+    </Spinner>
+    <EditText
+        android:id="@+id/Ret3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="30dp"
+        android:background="#ffffff"
+        android:textColor="#1e1d1d"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Registration Number"
+        />
+    <EditText
+        android:id="@+id/Ret4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textSize="30dp"
+        android:background="#ffffff"
+        android:textColor="#1e1d1d"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Date Of Birth (dd/mm/yyyy)"
+        android:inputType="date"
+        />
+    <android.support.v7.widget.CardView
+        android:layout_width="200dp"
+        android:id="@+id/register"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/colorAccent"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="14dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>
